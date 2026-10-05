@@ -1,0 +1,5 @@
+f) Escreva um programa que pergunte ao usuário se ele deseja adicionar açúcar
+ou leite ao seu café. Se o usuário responder que deseja adicionar açúcar OU
+leite, o programa deve imprimir a mensagem "Café com adicional preparado!".
+
+Exemplo de entrada esperada: "açúcar" ou "leite" (aceitar variações sem acento).
