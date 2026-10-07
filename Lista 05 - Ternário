@@ -1,0 +1,269 @@
+a) Verifique se um número é par ou ímpar
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Pede um número ao usuário
+        Console.Write("Digite um número: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        // Verifica se o resto da divisão por 2 é zero
+        if (numero % 2 == 0)
+        {
+            // Se for zero, o número é par
+            Console.WriteLine("O número é par.");
+        }
+        else
+        {
+            // Caso contrário, o número é ímpar
+            Console.WriteLine("O número é ímpar.");
+        }
+    }
+}
+
+
+b) Encontre o maior entre dois números
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Pede o primeiro número
+        Console.Write("Digite o primeiro número: ");
+        int numero1 = int.Parse(Console.ReadLine());
+
+        // Pede o segundo número
+        Console.Write("Digite o segundo número: ");
+        int numero2 = int.Parse(Console.ReadLine());
+
+        // Compara os dois números
+        if (numero1 > numero2)
+        {
+            Console.WriteLine("O maior número é: " + numero1);
+        }
+        else if (numero2 > numero1)
+        {
+            Console.WriteLine("O maior número é: " + numero2);
+        }
+        else
+        {
+            // Caso os dois sejam iguais
+            Console.WriteLine("Os dois números são iguais.");
+        }
+    }
+}
+
+
+c) Verifique se uma lista está vazia
+
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // Cria uma lista de números
+        List<int> lista = new List<int>();
+
+        // Verifica se a quantidade de elementos é igual a zero
+        if (lista.Count == 0)
+        {
+            Console.WriteLine("A lista está vazia.");
+        }
+        else
+        {
+            Console.WriteLine("A lista não está vazia.");
+        }
+    }
+}
+
+
+d) Verifique se uma string está vazia
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Pede uma palavra ou frase ao usuário
+        Console.Write("Digite alguma coisa: ");
+        string texto = Console.ReadLine();
+
+        // Verifica se a string está vazia
+        if (string.IsNullOrEmpty(texto))
+        {
+            Console.WriteLine("A string está vazia.");
+        }
+        else
+        {
+            Console.WriteLine("A string não está vazia.");
+        }
+    }
+}
+
+
+e) Verifique se uma condição é verdadeira
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Cria uma condição verdadeira
+        bool condicao = true;
+
+        // Verifica se a condição é verdadeira
+        if (condicao)
+        {
+            Console.WriteLine("A condição é verdadeira.");
+        }
+        else
+        {
+            Console.WriteLine("A condição é falsa.");
+        }
+    }
+}
+
+
+
+f) Calcule o valor absoluto de um número
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Pede um número ao usuário
+        Console.Write("Digite um número: ");
+        double numero = double.Parse(Console.ReadLine());
+
+        // Math.Abs() transforma o número em seu valor absoluto
+        double valorAbsoluto = Math.Abs(numero);
+
+        // Mostra o resultado
+        Console.WriteLine("O valor absoluto é: " + valorAbsoluto);
+    }
+}
+
+
+
+g) Verifique se um número é positivo, negativo ou zero
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Pede um número ao usuário
+        Console.Write("Digite um número: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        // Verifica se o número é positivo
+        if (numero > 0)
+        {
+            Console.WriteLine("O número é positivo.");
+        }
+        // Verifica se o número é negativo
+        else if (numero < 0)
+        {
+            Console.WriteLine("O número é negativo.");
+        }
+        // Se não for positivo nem negativo, é zero
+        else
+        {
+            Console.WriteLine("O número é zero.");
+        }
+    }
+}
+
+
+
+h) Converta uma string em um número
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Pede um número como texto
+        Console.Write("Digite um número: ");
+        string texto = Console.ReadLine();
+
+        // Converte a string para um número inteiro
+        int numero = int.Parse(texto);
+
+        // Mostra o número convertido
+        Console.WriteLine("Número convertido: " + numero);
+    }
+}
+
+
+
+i) Verifique se um número é divisível por outro
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Pede o primeiro número
+        Console.Write("Digite o primeiro número: ");
+        int numero1 = int.Parse(Console.ReadLine());
+
+        // Pede o segundo número
+        Console.Write("Digite o segundo número: ");
+        int numero2 = int.Parse(Console.ReadLine());
+
+        // Verifica se o segundo número é zero
+        if (numero2 == 0)
+        {
+            Console.WriteLine("Não é possível dividir por zero.");
+        }
+        // Verifica se o resto da divisão é zero
+        else if (numero1 % numero2 == 0)
+        {
+            Console.WriteLine("O número é divisível pelo outro.");
+        }
+        else
+        {
+            Console.WriteLine("O número não é divisível pelo outro.");
+        }
+    }
+}
+
+
+
+j) Verifique se uma variável é nula ou não
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Cria uma variável que recebe null
+        string texto = null;
+
+        // Verifica se a variável é nula
+        if (texto == null)
+        {
+            Console.WriteLine("A variável é nula.");
+        }
+        else
+        {
+            Console.WriteLine("A variável não é nula.");
+        }
+    }
+}
